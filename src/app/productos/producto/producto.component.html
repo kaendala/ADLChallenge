@@ -1,0 +1,1 @@
+<app-card *ngIf=mostrar [tipo]="producto.accountInformation.productType" [saldo]="producto.productAccountBalances? producto.productAccountBalances.saldo_disponible.amount: 'nada'" [numero]="producto.accountInformation.accountIdentifier" [pagar]="true"></app-card>
