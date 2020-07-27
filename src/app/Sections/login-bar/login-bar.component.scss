@@ -1,0 +1,26 @@
+.content-options{
+    width: 38.64vw;
+    position: relative;
+    top: 1vw;
+    left: 59vw;
+    display: flex;
+    align-items: center;
+    font-family: SansLight;
+    font-size: 1.05vw;
+    .option{
+        display: flex;
+        align-items: center;
+        border-left: 1px solid gray;
+        width: 12.5vw;
+        padding: 0vw 1vw;
+
+        [class^="icon-"], [class*=" icon-"] {
+            font-size: 3.75vw;
+            margin-left: 1vw;
+            background: gray;
+            color: white;
+            padding: 0.5vw;
+        }
+    }
+    
+}

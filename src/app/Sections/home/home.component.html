@@ -1,0 +1,26 @@
+<div class="containerHome">
+    <div class="init">
+        <div class="container-title">
+            <h1>Buenos días, Miguel</h1>
+            <h2>¿Cómo se ven tus finanzas?</h2>
+        </div>
+        <app-carrousel></app-carrousel>
+        <div class="showAll">
+            <h3>Mostrar otros productos</h3>
+            <app-button-toggle></app-button-toggle>
+        </div>      
+    </div>
+    <div class="container-productos">
+        <div *ngFor="let producto of productos"> 
+            <div [ngSwitch]="producto.accountInformation.productType" class="card-product" >
+                <app-producto *ngSwitchCase="'CERTIFIED_DEPOSIT_TERM'" [producto]=producto [mostrar]="producto.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
+                <app-producto *ngSwitchCase="'CREDIT'" [producto]=producto [mostrar]="producto.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
+                <app-producto *ngSwitchCase="'CREDIT_CARD'" [producto]=producto [mostrar]="producto.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
+                <app-producto *ngSwitchCase="'CURRENT_ACCOUNT'" [producto]=producto [mostrar]="producto.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
+                <app-producto *ngSwitchCase="'DEPOSIT_ACCOUNT'" [producto]=producto [mostrar]="producto.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
+            </div>  
+        </div>
+    </div>
+    
+    
+</div>

@@ -1,0 +1,42 @@
+.card{
+    background-color: white;
+    box-shadow: 0 0 2.6vw 0px rgba(72, 102, 229, 0.3); 
+    width: 22.38vw;
+    height: 27.06vw;
+    padding: 1.92vw;
+    margin: 3.41vw 2vw 3.41vw 0;
+    .iconos{
+        display: flex; 
+        position: relative;  
+        [class^="icon-"], [class*=" icon-"] {
+            color: #C4CDFF;
+            font-size: 2.6vw;
+        }
+        .end{
+            position: absolute;
+            right: 0;
+        }
+    }
+    .nombre{
+        margin-top: 2.69vw;
+    }
+    .saldo{
+        margin-top: 4.27vw;
+        h3{
+            font-family: SansBold;
+        }
+    }
+    h5{
+        font-family: SansLight;
+    }
+    .detalle{
+        position: absolute;
+        bottom: 2vw;
+        right: 2vw;
+        h5{
+            font-family: SansRegular;
+            color: #4866e5;
+        }
+    }
+
+}

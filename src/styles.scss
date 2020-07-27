@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: SansRegular;
+}
+$color-icon:                            #78188E;
+/*Fuentes*/
+@font-face {
+    font-family: SansSemiBold;
+    src: url('assets/fonts/SourceSansPro-SemiBold.otf') format("opentype");
+}
+  @font-face {
+    font-family: SansRegular;
+    src: url('assets/fonts/SourceSansPro-Regular.otf') format("opentype");
+  }
+  @font-face {
+    font-family: SansBold;
+    src: url('assets/fonts/SourceSansPro-Bold.otf') format("opentype");
+}
+  @font-face {
+    font-family: SansLight;
+    src: url('assets/fonts/SourceSansPro-Light.otf') format("opentype");
+  }
+  /*ICONOS*/
+  @font-face {
+    font-family: 'IconsMoon';
+    src: url('assets/fonts/icomoon.eot'); 
+    src: url('assets/fonts/icomoon.eot?#iefix') format('embedded-opentype'), 
+         url('assets/fonts/icomoon.svg#Durant-Bold') format('svg'), 
+         url('assets/fonts/icomoon.ttf')  format('truetype'), 
+         url('assets/fonts/icomoon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    [class^="icon-"], [class*=" icon-"] {
+        font-family: 'IconsMoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        color: $color-icon;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .icon-perfil:before {
+        content: "\e971";
+    }
+    .icon-alertas:before {
+        content: "\e951";
+    }
+    .icon-salir:before {
+        content: "\e967";
+    }
+    /*Generales*/
+  
+   h1{
+       font-size: 4.16vw;
+   }
+   h2{
+    font-size: 3.64vw;
+   }
+    h3{
+        font-size: 2.08vw;
+    }
+    h4{
+        font-size: 1.56vw;
+    }
+    h5{
+        font-size: 1.30vw;
+    }

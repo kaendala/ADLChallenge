@@ -1,14 +1,4 @@
-<h1>Holllaaa</h1>
-<div *ngFor="let producto of productos" > 
-    <div [ngSwitch]="producto.accountInformation.productType" >
-        <app-producto *ngSwitchCase="'CERTIFIED_DEPOSIT_TERM'" [producto]=producto [mostrar]="producto.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
-        <app-producto *ngSwitchCase="'CREDIT'" [producto]=producto [mostrar]="producto.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
-        <app-producto *ngSwitchCase="'CREDIT_CARD'" [producto]=producto [mostrar]="producto.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
-        <app-producto *ngSwitchCase="'CURRENT_ACCOUNT'" [producto]=producto [mostrar]="producto.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
-        <app-producto *ngSwitchCase="'DEPOSIT_ACCOUNT'" [producto]=producto [mostrar]="producto.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
-    </div>  
-</div>
-
-
-
-<h1>Holllaaa2</h1>
+<app-login-bar></app-login-bar>
+<app-nav-bar></app-nav-bar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

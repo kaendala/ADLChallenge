@@ -1,0 +1,30 @@
+.content-options{
+    width: 7.81vw;
+    position: fixed;;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: SansLight;
+    font-size: 2.75vw;
+    border-right: 1px solid gray;
+    background-color: white;
+    .principal{
+        font-size: 3.75vw;
+        border-bottom: 1px solid gray;
+        padding-bottom: 2vw;
+    }
+    .option{
+        display: flex;
+        align-items: center;
+        margin: 1.5vw 0;   
+
+        [class^="icon-"], [class*=" icon-"] {
+            color: white;
+            padding: 0.5vw;
+            margin: 0 auto;
+            background: gray;
+        }
+    }
+    
+}

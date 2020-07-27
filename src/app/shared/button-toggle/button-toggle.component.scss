@@ -1,0 +1,27 @@
+.btn-toggle.btn-xs {
+    margin: 0 0;
+    padding: 0;
+    position: relative;
+    border: none;
+    height: 1rem;
+    width: 2rem;
+    border-radius: 1rem;
+    .handle {
+        position: absolute;
+        top: 0.125rem;
+        left: 0.125rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 0.75rem;
+        background: #fff;
+        transition: left 0.25s;
+    }
+}
+.btn-toggle.btn-xs.active {
+    transition: background-color 0.25s;
+    background-color: #29b5a8;
+    .handle{
+        left: 1.125rem;
+        transition: left 0.25s;
+    }
+}

@@ -1,0 +1,30 @@
+.containerHome{
+    margin: 5.8vw 3.17vw 4.8vw 11vw;
+    .init{
+        background-color: #4866E5;
+        border: 1px solid gray;
+        border-radius: 0.5vw;
+        .container-title{
+            margin-left: 3.85vw;
+            margin-top: 3vw;
+
+        }
+       .showAll{
+        display: flex;
+        justify-content: flex-end;
+        margin: 6vw 2vw 1.5vw;
+        h3{
+            margin-right: 2vw;
+        }
+       } 
+    }
+    .container-productos{
+        display: flex;
+        flex-wrap: wrap;
+        width: 73.33vw;
+        margin: 0 auto;
+        
+    }
+
+
+}
