@@ -1,22 +1,25 @@
 <div class="card">
     <div class="iconos">
-        <span class="icon-alertas"></span>
-        <span class="icon-alertas end"></span>
+        <span *ngIf=isTc class='{{icon2}}'></span>
+        <span class="{{icon}} end"></span>
     </div>
     <div class="nombre">
         <h3>{{tipo}}</h3>
     </div>
     <div class="numero">
-        <h5>{{numero}}</h5></div>
+        <h5>Nro.{{numero}}</h5></div>
     <div class="saldo"> 
-        <h5>Saldo disponible</h5>
+        <h5>{{titleSaldo}}</h5>
         <h3>{{saldo}}</h3>  
     </div> 
-    <p>{{pagar}}</p>  
-    <div class="detalle">
-        <h5>Ver detalle</h5>
-    </div> 
+    <div>
+        <div *ngIf=pagar class="button"><a href="#">Pagar</a></div>
+        <div class="detalle">
+            <h5>Ver detalle</h5>
+        </div> 
+    </div>
 </div>
+
 
 
 

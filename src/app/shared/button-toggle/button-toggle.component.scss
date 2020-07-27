@@ -3,25 +3,28 @@
     padding: 0;
     position: relative;
     border: none;
-    height: 1rem;
-    width: 2rem;
-    border-radius: 1rem;
+    width: 3vw;
+    border-radius: 1vw;
+    height: 1.5vw;
+    background-color: gray;
     .handle {
         position: absolute;
         top: 0.125rem;
         left: 0.125rem;
-        width: 0.75rem;
-        height: 0.75rem;
-        border-radius: 0.75rem;
+        width: 1.3vw;
+        height: 1.3vw;
+        border-radius: 1vw;
         background: #fff;
         transition: left 0.25s;
     }
 }
 .btn-toggle.btn-xs.active {
     transition: background-color 0.25s;
-    background-color: #29b5a8;
+    background-color: #ececec;
     .handle{
-        left: 1.125rem;
-        transition: left 0.25s;
+        right: 0;
+        left: initial;
+        transition: right 0.25s;
+        background-color: #4866e5;
     }
 }

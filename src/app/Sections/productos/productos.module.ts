@@ -19,6 +19,9 @@ import { ProductoComponent } from './producto/producto.component';
 })
 export class ProductosModule { 
   accountInformation: AccountInformation;
+  icono: string;
+  icono2: string;
+  nombreCuenta: string;
   locked: string;
   id: string;
   typeAccount: string;
@@ -46,6 +49,20 @@ export class ProductAccountBalances {
   valor_constitucion: Balances;
   intereses_causados: Balances;
   retefuente: Balances;
+  saldo_canje: Balances;
+  saldo_disponible: Balances;
+  saldo_canje_48_horas: Balances;
+  saldo_canje_72_horas: Balances;
+  saldo_canje_24_horas: Balances;
+  saldo_ayer: Balances;
+  saldo_actual: Balances;
+  pago_total_pesos: Balances;
+  cupo_disponible_avances_pesos: Balances;
+  cupo_disponible_compras_pesos: Balances;
+  saldo_mora_pesos: Balances;
+  valor_pago_minimo: Balances;
+  cupo_total: Balances;
+
 
 }
 export class Balances { 

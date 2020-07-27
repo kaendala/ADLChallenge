@@ -12,6 +12,7 @@
        .showAll{
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         margin: 6vw 2vw 1.5vw;
         h3{
             margin-right: 2vw;
@@ -22,7 +23,10 @@
         display: flex;
         flex-wrap: wrap;
         width: 73.33vw;
-        margin: 0 auto;
+        margin: 3vw auto;
+        h3{
+            width: 100%;
+        }
         
     }
 

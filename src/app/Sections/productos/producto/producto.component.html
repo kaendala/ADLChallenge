@@ -1,1 +1,25 @@
-<app-card *ngIf=mostrar [tipo]="producto.accountInformation.productType" [saldo]="producto.productAccountBalances? producto.productAccountBalances.saldo_disponible.amount: 'nada'" [numero]="producto.accountInformation.accountIdentifier" [pagar]="true"></app-card>
+<app-card *ngIf=mostrar [tipo]="getLabel()" [titleSaldo]="titleSaldo" [saldo]="saldo" 
+[numero]="producto.accountInformation.accountIdentifier" [pagar]="pagar" [icon]=geticon() [isTc]=isTc (click)="abrirPopup()"></app-card>
+<div *ngIf=abrirpopup class="contenedor-popup">
+    <div class="popup" >
+        <div class="cerrar" (click)="cerrarPopup()">X</div>
+        <div class="nombre">
+            <h3>{{getLabel()}}</h3>
+        </div>
+        <div class="numero">
+            <h5>Nro.{{producto.accountInformation.accountIdentifier}}</h5>
+        </div>
+        <div class="saldo"> 
+            <h5>{{titleSaldo}}</h5>
+            <h3>{{saldo}}</h3>  
+        </div> 
+        <div *ngIf=producto.productAccountBalances.saldo_ayer class="saldo"> 
+            <h5>Saldo ayer</h5>
+            <h3>{{producto.productAccountBalances.saldo_ayer.amount}}</h3>  
+        </div> 
+        <div *ngIf=producto.productAccountBalances.valor_pago_minimo class="saldo"> 
+            <h5>Valos minimo a pagar</h5>
+            <h3>{{producto.productAccountBalances.valor_pago_minimo.amount}}</h3>  
+        </div> 
+    </div>
+</div>

@@ -38,5 +38,21 @@
             color: #4866e5;
         }
     }
+    .button{
+        width: 10vw;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: #4866e5;
+        color: white;
+        border-radius: 0.2vw;
+        font-size: 1.56vw;
+        font-family: SansSemiBold;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        a{
+            color: white;
+        }
+    }
 
 }

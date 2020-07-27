@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?m3p3dk');
-  src:  url('fonts/icomoon.eot?m3p3dk#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?m3p3dk') format('truetype'),
-    url('fonts/icomoon.woff?m3p3dk') format('woff'),
-    url('fonts/icomoon.svg?m3p3dk#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?c2d4xk');
+  src:  url('fonts/icomoon.eot?c2d4xk#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?c2d4xk') format('truetype'),
+    url('fonts/icomoon.woff?c2d4xk') format('woff'),
+    url('fonts/icomoon.svg?c2d4xk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cc-mastercard:before {
+  content: "\eaec";
+}
+.icon-cc-visa:before {
+  content: "\eaeb";
+}
 .icon-home:before {
   content: "\e900";
 }

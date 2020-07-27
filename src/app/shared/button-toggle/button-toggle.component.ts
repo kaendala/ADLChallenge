@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-button-toggle',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button-toggle.component.scss']
 })
 export class ButtonToggleComponent implements OnInit {
-
+  @Output() pressed= new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  clicktogle(){
+    this.pressed.emit('true');
+  }
 }
