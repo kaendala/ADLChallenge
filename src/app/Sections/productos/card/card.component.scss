@@ -1,16 +1,16 @@
 .card{
     background-color: white;
-    box-shadow: 0 0 2.6vw 0px rgba(72, 102, 229, 0.3); 
-    width: 22.38vw;
-    height: 27.06vw;
+    box-shadow: 0 0 2.6vw 0px rgba(72, 102, 229, 0.3);
+    width: 14.38vw;
+    height: 19.06vw;
     padding: 1.92vw;
-    margin: 3.41vw 2vw 3.41vw 0;
+    margin: 1.41vw 1.8vw 3.41vw 1.8vw;
     .iconos{
         display: flex; 
         position: relative;  
         [class^="icon-"], [class*=" icon-"] {
             color: #C4CDFF;
-            font-size: 2.6vw;
+            font-size: 1.9vw;
         }
         .end{
             position: absolute;
@@ -21,7 +21,7 @@
         margin-top: 2.69vw;
     }
     .saldo{
-        margin-top: 4.27vw;
+        margin-top: 1.27vw;;
         h3{
             font-family: SansBold;
         }
@@ -31,25 +31,25 @@
     }
     .detalle{
         position: absolute;
-        bottom: 2vw;
-        right: 2vw;
+        bottom: 1vw;
+        right: 1vw;
         h5{
             font-family: SansRegular;
             color: #4866e5;
         }
     }
     .button{
-        width: 10vw;
+        width: 5vw;
         justify-content: center;
         align-items: center;
         display: flex;
         background-color: #4866e5;
         color: white;
         border-radius: 0.2vw;
-        font-size: 1.56vw;
+        font-size: 0.9vw;
         font-family: SansSemiBold;
         padding: 0.5vw;
-        margin-top: 1vw;
+        margin-top: 0.5vw;
         a{
             color: white;
         }

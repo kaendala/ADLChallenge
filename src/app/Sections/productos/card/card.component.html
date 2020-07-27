@@ -10,7 +10,7 @@
         <h5>Nro.{{numero}}</h5></div>
     <div class="saldo"> 
         <h5>{{titleSaldo}}</h5>
-        <h3>{{saldo}}</h3>  
+        <h3 type="text" >{{saldo|currency:"$"}}</h3>  
     </div> 
     <div>
         <div *ngIf=pagar class="button"><a href="#">Pagar</a></div>

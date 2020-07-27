@@ -15,11 +15,11 @@
         </div> 
         <div *ngIf=producto.productAccountBalances.saldo_ayer class="saldo"> 
             <h5>Saldo ayer</h5>
-            <h3>{{producto.productAccountBalances.saldo_ayer.amount}}</h3>  
+            <h3>{{producto.productAccountBalances.saldo_ayer?producto.productAccountBalances.saldo_ayer.amount:0}}</h3>  
         </div> 
         <div *ngIf=producto.productAccountBalances.valor_pago_minimo class="saldo"> 
             <h5>Valos minimo a pagar</h5>
-            <h3>{{producto.productAccountBalances.valor_pago_minimo.amount}}</h3>  
+            <h3>{{producto.productAccountBalances.valor_pago_minimo?producto.productAccountBalances.valor_pago_minimo.amount:0}}</h3>  
         </div> 
     </div>
 </div>

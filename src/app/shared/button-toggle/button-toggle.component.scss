@@ -6,7 +6,7 @@
     width: 3vw;
     border-radius: 1vw;
     height: 1.5vw;
-    background-color: gray;
+    background-color: white;
     .handle {
         position: absolute;
         top: 0.125rem;
@@ -14,7 +14,7 @@
         width: 1.3vw;
         height: 1.3vw;
         border-radius: 1vw;
-        background: #fff;
+        background: gray;
         transition: left 0.25s;
     }
 }
@@ -25,6 +25,6 @@
         right: 0;
         left: initial;
         transition: right 0.25s;
-        background-color: #4866e5;
+        background-color: #00C6F1;;
     }
 }

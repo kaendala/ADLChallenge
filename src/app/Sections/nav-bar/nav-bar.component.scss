@@ -1,16 +1,16 @@
 .content-options{
-    width: 7.81vw;
-    position: fixed;;
+    width: 4.81vw;
+    position: fixed;
     left: 0;
     top: 0;
     display: flex;
     flex-direction: column;
     font-family: SansLight;
-    font-size: 2.75vw;
+    font-size: 1.45vw;
     border-right: 1px solid gray;
     background-color: white;
     .principal{
-        font-size: 3.75vw;
+        font-size: 2vw;
         border-bottom: 1px solid gray;
         padding-bottom: 2vw;
     }
@@ -24,6 +24,7 @@
             padding: 0.5vw;
             margin: 0 auto;
             background: gray;
+            border-radius: 0.6vw;
         }
     }
     
