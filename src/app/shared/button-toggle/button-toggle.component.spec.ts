@@ -22,4 +22,8 @@ describe('ButtonToggleComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should create', () => {
+    component.clicktogle()
+    expect(component.clicktogle()).toBeUndefined();
+  });
 });

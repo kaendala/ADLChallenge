@@ -11,31 +11,31 @@
         </div>      
     </div>
     <div>
-        <div class="container-productos" *ngIf="cuentasAHO.length>0">
+        <div class="container-productos">
             <h3>Cuentas de Ahorro</h3>
             <div *ngFor="let aho of cuentasAHO">
                 <app-producto [producto]=aho [mostrar]="aho.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
             </div> 
         </div>
-        <div class="container-productos" *ngIf="cuentasCTE.length>0">
+        <div class="container-productos" *ngIf="showAll">
             <h3>Cuentas Corriente</h3>
             <div *ngFor="let cte of cuentasCTE">
                 <app-producto [producto]=cte [mostrar]="cte.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
             </div> 
         </div>
-        <div class="container-productos">
+        <div class="container-productos" *ngIf="showAll">
             <h3>CDT</h3>
             <div *ngFor="let cdt of CDT">
                 <app-producto [producto]=cdt [mostrar]="cdt.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
             </div> 
         </div>
-        <div class="container-productos">
+        <div class="container-productos" *ngIf="showAll">
             <h3>Créditos</h3>
             <div *ngFor="let credito of Credit">
                 <app-producto [producto]=credito [mostrar]="credito.accountInformation.bank=='BANCO_1' || showAll"></app-producto>
             </div> 
         </div>
-        <div class="container-productos">
+        <div class="container-productos" *ngIf="showAll">
             <h3>Tarjeta de Créditos</h3>
             <div *ngFor="let tc of Tc">
                 <app-producto [producto]=tc [mostrar]="tc.accountInformation.bank=='BANCO_1' || showAll" [isTc]='true'></app-producto>

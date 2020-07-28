@@ -4,7 +4,11 @@ html, body {
     font-family: SansRegular;
     background-color: #F3F5FF;
 }
+h1, h2, h3, h4, h5{
+  margin: 0;
+}
 $color-icon:                            #78188E;
+
 /*Fuentes*/
 @font-face {
     font-family: SansSemiBold;

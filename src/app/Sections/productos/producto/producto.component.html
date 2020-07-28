@@ -3,23 +3,53 @@
 <div *ngIf=abrirpopup class="contenedor-popup">
     <div class="popup" >
         <div class="cerrar" (click)="cerrarPopup()">X</div>
-        <div class="nombre">
-            <h3>{{getLabel()}}</h3>
-        </div>
+        <div><h1>Detalle de tu {{getLabel()}}</h1></div>
         <div class="numero">
             <h5>Nro.{{producto.accountInformation.accountIdentifier}}</h5>
         </div>
-        <div class="saldo"> 
-            <h5>{{titleSaldo}}</h5>
-            <h3>{{saldo}}</h3>  
+        <div class="content-colum">
+        <div class="Colum">Saldos
+            <div class="saldo"> 
+                <h5>{{titleSaldo}}</h5>
+                <h3>{{saldo}}</h3>  
+            </div> 
+            <div *ngIf=producto.productAccountBalances.saldo_ayer class="saldo"> 
+                <h5>Saldo ayer</h5>
+                <h3>{{producto.productAccountBalances.saldo_ayer?producto.productAccountBalances.saldo_ayer.amount:0}}</h3>  
+            </div> 
+            <div *ngIf=producto.productAccountBalances.valor_pago_minimo class="saldo"> 
+                <h5>Valos minimo a pagar</h5>
+                <h3>{{producto.productAccountBalances.valor_pago_minimo?producto.productAccountBalances.valor_pago_minimo.amount:0}}</h3>  
+            </div>
+        </div>   
+        <div class="Colum">Fechas
+                <div class="saldo" *ngIf=producto.openedDate> 
+                    <h5>Fecha de apertura</h5>
+                    <h3>{{producto.openedDate}}</h3>  
+                </div> 
+                <div *ngIf=producto.closedDate class="saldo"> 
+                    <h5>Fecha de cierre</h5>
+                    <h3>{{producto.closedDate}}</h3>  
+                </div> 
+                <div *ngIf=producto.lastTransactionDate class="saldo"> 
+                    <h5>Fecha ultima transaccion</h5>
+                    <h3>{{producto.lastTransactionDate}}</h3>  
+                </div>
         </div> 
-        <div *ngIf=producto.productAccountBalances.saldo_ayer class="saldo"> 
-            <h5>Saldo ayer</h5>
-            <h3>{{producto.productAccountBalances.saldo_ayer?producto.productAccountBalances.saldo_ayer.amount:0}}</h3>  
-        </div> 
-        <div *ngIf=producto.productAccountBalances.valor_pago_minimo class="saldo"> 
-            <h5>Valos minimo a pagar</h5>
-            <h3>{{producto.productAccountBalances.valor_pago_minimo?producto.productAccountBalances.valor_pago_minimo.amount:0}}</h3>  
-        </div> 
+        <div class="Colum">Otros
+                <div class="saldo" *ngIf=producto.term> 
+                    <h5>Periodo de pago</h5>
+                    <h3>{{producto.term.count}}</h3>  
+                </div> 
+                <div *ngIf=producto.closedDate class="saldo"> 
+                    <h5>Fecha de cierre</h5>
+                    <h3>{{producto.closedDate}}</h3>  
+                </div> 
+                <div *ngIf=producto.lastTransactionDate class="saldo"> 
+                    <h5>Fecha ultima transaccion</h5>
+                    <h3>{{producto.lastTransactionDate}}</h3>  
+                </div>
+            </div> 
+        </div>  
     </div>
 </div>

@@ -62,6 +62,7 @@ export class ProductAccountBalances {
   saldo_mora_pesos: Balances;
   valor_pago_minimo: Balances;
   cupo_total: Balances;
+  term: Balances;
 
 
 }
